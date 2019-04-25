@@ -28,4 +28,5 @@
     * 'Debugbar' => Barryvdh\Debugbar\Facade::class,
    
 - 根目录下steps目录记录实现步骤
+- 为了加强自己的英文，会慢慢把注释和文档换成英文，脱离舒适区(实际上是觉得中英文切换好麻烦 哈哈)
     
