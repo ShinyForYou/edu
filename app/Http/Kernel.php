@@ -57,5 +57,8 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+
+        // 后续自定义的中间件可以在这里注册，形式参考上述
+        'checkrbac' => \App\Http\Middleware\CheckRbac::class,
     ];
 }
