@@ -5,13 +5,15 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
+use App\Admin\Member;
 
 class MemberController extends Controller
 {
     //
     public function index()
     {
-        return view('admin.member.memberList');
+        $res = Member::all();
+        return view('admin.member.memberList')->with('res', $res);
     }
     public function add(Request $request)
     {
